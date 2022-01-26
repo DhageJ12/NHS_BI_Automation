@@ -1,0 +1,2802 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>Translation Hub Test Result</title>
+
+	<style type='text/css'>
+	</style>
+</head>
+
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>Translation Hub Application</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Dec 3, 2021 08:52:34 PM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>3.1.5</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='89.655%'><span class='strong'>52</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='10.345%'>6</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='61.143%'><span class='strong'>107</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='4%'>7</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='34.857%'>61</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>SC001_VS verify the landing page for vendor study: Executed On Browser::chrome</span>
+						<span class='test-time'>Dec 3, 2021 08:52:37 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 3, 2021 08:52:37 PM</span>
+	<span class='label end-time'>Dec 3, 2021 08:52:37 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='2'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Login To Translations Hub Application Verification For Valid Credentials</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:52:49 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 12s+135ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:52:40 PM</td>
+													<td class='step-details'>URL use to login into the application is https://dashboard.uat.sth.aws.blinxsolutions.systems/</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:52:40 PM</td>
+													<td class='step-details'>Translations Hub Application is launch successfully.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:52:41 PM</td>
+													<td class='step-details'>User name enter is: amol.nikam@blinxsolutions.com</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:52:41 PM</td>
+													<td class='step-details'>Password enter is: Blinx@123</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:52:49 PM</td>
+													<td class='step-details'>Login to the application is successful com.aventstack.extentreports.ExtentTest@18f4f03</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='SuccessFulLoginVerification_2021.12.03 20-52-49.png' width='10%' src='SuccessFulLoginVerification_2021.12.03 20-52-49.png' data-src='SuccessFulLoginVerification_2021.12.03 20-52-49.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='3'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Vendor Studies  :Page Navigation Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:52:54 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 5s+87ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:52:54 PM</td>
+													<td class='step-details'>User Click on the Vendor Studies option from the hamburg menu.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='4'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>verify the landing page for vendor study</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:52:57 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 2s+264ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:52:57 PM</td>
+													<td class='step-details'>Date Created,Sponsor Name,Study Name,Study Code,To Do,In Progress,In Review,Update,Actions,Update,% Completed,Overall Status These columns are present on the Vendor Studies home page table. com.aventstack.extentreports.ExtentTest@1c65121</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='VendorStudies_2021.12.03 20-52-56.png' width='10%' src='VendorStudies_2021.12.03 20-52-56.png' data-src='VendorStudies_2021.12.03 20-52-56.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='5'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Logout From Translations Hub Application Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:53:00 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 3s+318ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:52:57 PM</td>
+													<td class='step-details'>User Click on the hamburg menu.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:53:00 PM</td>
+													<td class='step-details'>User Click on logout button.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:53:00 PM</td>
+													<td class='step-details'>User logout successfully from the Translations Hub application.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>SC002_VS verify the search box on the vendor study landing page: Executed On Browser::chrome</span>
+						<span class='test-time'>Dec 3, 2021 08:53:02 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 3, 2021 08:53:02 PM</span>
+	<span class='label end-time'>Dec 3, 2021 08:53:02 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='7'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Login To Translations Hub Application Verification For Valid Credentials</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:53:14 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 11s+972ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:53:07 PM</td>
+													<td class='step-details'>URL use to login into the application is https://dashboard.uat.sth.aws.blinxsolutions.systems/</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:53:07 PM</td>
+													<td class='step-details'>Translations Hub Application is launch successfully.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:53:07 PM</td>
+													<td class='step-details'>User name enter is: amol.nikam@blinxsolutions.com</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:53:07 PM</td>
+													<td class='step-details'>Password enter is: Blinx@123</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:53:14 PM</td>
+													<td class='step-details'>Login to the application is successful com.aventstack.extentreports.ExtentTest@50a407</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='SuccessFulLoginVerification_2021.12.03 20-53-14.png' width='10%' src='SuccessFulLoginVerification_2021.12.03 20-53-14.png' data-src='SuccessFulLoginVerification_2021.12.03 20-53-14.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='8'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Vendor Studies  :Page Navigation Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:53:19 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 4s+738ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:53:19 PM</td>
+													<td class='step-details'>User Click on the Vendor Studies option from the hamburg menu.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='9'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>verify the search box on the vendor study landing page</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:53:22 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 3s+248ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:53:22 PM</td>
+													<td class='step-details'>Vendor studies search functionality is working fine.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:53:22 PM</td>
+													<td class='step-details'>Search functionality working fine com.aventstack.extentreports.ExtentTest@1af2337</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='SearchNotWorking_2021.12.03 20-53-22.png' width='10%' src='SearchNotWorking_2021.12.03 20-53-22.png' data-src='SearchNotWorking_2021.12.03 20-53-22.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='10'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Logout From Translations Hub Application Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:53:25 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 2s+130ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:53:23 PM</td>
+													<td class='step-details'>User Click on the hamburg menu.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:53:25 PM</td>
+													<td class='step-details'>User Click on logout button.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:53:25 PM</td>
+													<td class='step-details'>User logout successfully from the Translations Hub application.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>SC003_VS Verify the Export table button: Executed On Browser::chrome</span>
+						<span class='test-time'>Dec 3, 2021 08:53:27 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 3, 2021 08:53:27 PM</span>
+	<span class='label end-time'>Dec 3, 2021 08:53:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='12'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Login To Translations Hub Application Verification For Valid Credentials</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:53:40 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 13s+261ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:53:33 PM</td>
+													<td class='step-details'>URL use to login into the application is https://dashboard.uat.sth.aws.blinxsolutions.systems/</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:53:33 PM</td>
+													<td class='step-details'>Translations Hub Application is launch successfully.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:53:33 PM</td>
+													<td class='step-details'>User name enter is: amol.nikam@blinxsolutions.com</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:53:33 PM</td>
+													<td class='step-details'>Password enter is: Blinx@123</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:53:40 PM</td>
+													<td class='step-details'>Login to the application is successful com.aventstack.extentreports.ExtentTest@9028af</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='SuccessFulLoginVerification_2021.12.03 20-53-40.png' width='10%' src='SuccessFulLoginVerification_2021.12.03 20-53-40.png' data-src='SuccessFulLoginVerification_2021.12.03 20-53-40.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='13'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Vendor Studies  :Page Navigation Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:53:45 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 4s+992ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:53:45 PM</td>
+													<td class='step-details'>User Click on the Vendor Studies option from the hamburg menu.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='14'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Verify Vendor Studies Export Table -->Excel XLS format</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:53:49 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 3s+932ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>8:53:49 PM</td>
+													<td class='step-details'>Export_Excel03_12_2021_20_53.xlsx is not downloaded successfully in Excel (xlsx) format</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='15'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Verify Vendor Studies Export Table -->Excel CSV format</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:53:52 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 3s+183ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>8:53:52 PM</td>
+													<td class='step-details'>Export_CSV03_12_2021_20_53.csv is not downloaded successfully in CSV format</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='16'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Verify Vendor Studies Export Table -->Excel PDF format</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:53:56 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 3s+328ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:53:56 PM</td>
+													<td class='step-details'>Export_PDF03_12_2021_20_53.pdf is downloaded successfully in PDF format</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='17'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Logout From Translations Hub Application Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:54:00 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 3s+688ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:53:56 PM</td>
+													<td class='step-details'>User Click on the hamburg menu.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:54:00 PM</td>
+													<td class='step-details'>User Click on logout button.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:54:00 PM</td>
+													<td class='step-details'>User logout successfully from the Translations Hub application.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>SC004_VS verify columns and filters from AG grid: Executed On Browser::chrome</span>
+						<span class='test-time'>Dec 3, 2021 08:54:02 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 3, 2021 08:54:02 PM</span>
+	<span class='label end-time'>Dec 3, 2021 08:54:02 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='19'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Login To Translations Hub Application Verification For Valid Credentials</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:54:14 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 11s+979ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:54:06 PM</td>
+													<td class='step-details'>URL use to login into the application is https://dashboard.uat.sth.aws.blinxsolutions.systems/</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:54:06 PM</td>
+													<td class='step-details'>Translations Hub Application is launch successfully.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:54:06 PM</td>
+													<td class='step-details'>User name enter is: amol.nikam@blinxsolutions.com</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:54:07 PM</td>
+													<td class='step-details'>Password enter is: Blinx@123</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:54:14 PM</td>
+													<td class='step-details'>Login to the application is successful com.aventstack.extentreports.ExtentTest@54f833</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='SuccessFulLoginVerification_2021.12.03 20-54-13.png' width='10%' src='SuccessFulLoginVerification_2021.12.03 20-54-13.png' data-src='SuccessFulLoginVerification_2021.12.03 20-54-13.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='20'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Vendor Studies  :Page Navigation Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:54:23 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 8s+858ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:54:23 PM</td>
+													<td class='step-details'>User Click on the Vendor Studies option from the hamburg menu.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='21'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>verify columns and filters from AG grid</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:55:56 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 1m 33s+455ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:54:23 PM</td>
+													<td class='step-details'>User click on column tab from the studies translation page table ag grid</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:54:24 PM</td>
+													<td class='step-details'>10 these many records are present before applying filter</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:54:24 PM</td>
+													<td class='step-details'>User select value in input box as: SH</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:54:24 PM</td>
+													<td class='step-details'>User select value in input box as: only</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:54:25 PM</td>
+													<td class='step-details'>8 these many records are present after applying filter com.aventstack.extentreports.ExtentTest@162658b</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:54:26 PM</td>
+													<td class='step-details'>User click on column tab from the studies translation page table ag grid</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:55:56 PM</td>
+													<td class='step-details'>Date Created field is not selected in column filter hence is it not display in AG grid.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:55:56 PM</td>
+													<td class='step-details'>Date Created field is selected in column filter hence is it display in AG grid.</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='Filterapply_2021.12.03 20-54-25.png' width='10%' src='Filterapply_2021.12.03 20-54-25.png' data-src='Filterapply_2021.12.03 20-54-25.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='22'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Verify drag & drop functionality of column tab grid</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:55:58 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 1s+498ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:55:57 PM</td>
+													<td class='step-details'>Date Created column drag & drop successfully.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:55:57 PM</td>
+													<td class='step-details'>Sponsor Name column drag & drop successfully.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:55:57 PM</td>
+													<td class='step-details'>Quote Code column drag & drop successfully.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:55:58 PM</td>
+													<td class='step-details'>Drag and Drop successfull com.aventstack.extentreports.ExtentTest@4223e9</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='DragAndDrop_2021.12.03 20-55-57.png' width='10%' src='DragAndDrop_2021.12.03 20-55-57.png' data-src='DragAndDrop_2021.12.03 20-55-57.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='23'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Logout From Translations Hub Application Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:56:01 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 3s+611ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:55:58 PM</td>
+													<td class='step-details'>User Click on the hamburg menu.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:56:01 PM</td>
+													<td class='step-details'>User Click on logout button.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:56:01 PM</td>
+													<td class='step-details'>User logout successfully from the Translations Hub application.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='24'>
+					<div class='test-heading'>
+						<span class='test-name'>SC005_VS verify vendor study translation page for vendor studies: Executed On Browser::chrome</span>
+						<span class='test-time'>Dec 3, 2021 08:56:03 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 3, 2021 08:56:03 PM</span>
+	<span class='label end-time'>Dec 3, 2021 08:56:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='25'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Login To Translations Hub Application Verification For Valid Credentials</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:56:13 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 10s+120ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:56:07 PM</td>
+													<td class='step-details'>URL use to login into the application is https://dashboard.uat.sth.aws.blinxsolutions.systems/</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:56:07 PM</td>
+													<td class='step-details'>Translations Hub Application is launch successfully.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:56:07 PM</td>
+													<td class='step-details'>User name enter is: amol.nikam@blinxsolutions.com</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:56:07 PM</td>
+													<td class='step-details'>Password enter is: Blinx@123</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:56:13 PM</td>
+													<td class='step-details'>Login to the application is successful com.aventstack.extentreports.ExtentTest@180cb79</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='SuccessFulLoginVerification_2021.12.03 20-56-13.png' width='10%' src='SuccessFulLoginVerification_2021.12.03 20-56-13.png' data-src='SuccessFulLoginVerification_2021.12.03 20-56-13.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='26'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Vendor Studies  :Page Navigation Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:56:17 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 4s+28ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:56:17 PM</td>
+													<td class='step-details'>User Click on the Vendor Studies option from the hamburg menu.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='27'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Verify vendor study translation page for vendor studies</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:56:21 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 3s+733ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:56:21 PM</td>
+													<td class='step-details'>Status,Created Date,Language,IRB Date,Version A,First Review Date,Version B,Second Review Date,Actions,Version 1 Created Date,COT Receipt Date,QRG Receipt Date,SUM Receipt Date,Priority,Version These columns are present on the Vendor Studies home page table. com.aventstack.extentreports.ExtentTest@b018f3</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='VendorStudies_2021.12.03 20-56-21.png' width='10%' src='VendorStudies_2021.12.03 20-56-21.png' data-src='VendorStudies_2021.12.03 20-56-21.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='28'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Logout From Translations Hub Application Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:56:23 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 2s+77ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:56:21 PM</td>
+													<td class='step-details'>User Click on the hamburg menu.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:56:23 PM</td>
+													<td class='step-details'>User Click on logout button.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:56:23 PM</td>
+													<td class='step-details'>User logout successfully from the Translations Hub application.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='29'>
+					<div class='test-heading'>
+						<span class='test-name'>SC006_VS Verify Version A column is added on the vendor study translation page for vendor studies: Executed On Browser::chrome</span>
+						<span class='test-time'>Dec 3, 2021 08:56:29 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 3, 2021 08:56:29 PM</span>
+	<span class='label end-time'>Dec 3, 2021 08:56:29 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='30'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Login To Translations Hub Application Verification For Valid Credentials</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:56:39 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 10s+52ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:56:32 PM</td>
+													<td class='step-details'>URL use to login into the application is https://dashboard.uat.sth.aws.blinxsolutions.systems/</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:56:32 PM</td>
+													<td class='step-details'>Translations Hub Application is launch successfully.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:56:32 PM</td>
+													<td class='step-details'>User name enter is: amol.nikam@blinxsolutions.com</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:56:32 PM</td>
+													<td class='step-details'>Password enter is: Blinx@123</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:56:39 PM</td>
+													<td class='step-details'>Login to the application is successful com.aventstack.extentreports.ExtentTest@9cfc77</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='SuccessFulLoginVerification_2021.12.03 20-56-38.png' width='10%' src='SuccessFulLoginVerification_2021.12.03 20-56-38.png' data-src='SuccessFulLoginVerification_2021.12.03 20-56-38.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='31'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Vendor Studies  :Page Navigation Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:56:43 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 4s+495ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:56:43 PM</td>
+													<td class='step-details'>User Click on the Vendor Studies option from the hamburg menu.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='32'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Verify different column is added on the vendor study translation page for vendor studies</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:56:47 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 3s+890ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:56:47 PM</td>
+													<td class='step-details'>Version A column is present on translation landing page & it is readonly.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:56:47 PM</td>
+													<td class='step-details'>First Review Date column is present on translation landing page & it is readonly.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:56:47 PM</td>
+													<td class='step-details'>Version B column is present on translation landing page & it is readonly.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:56:47 PM</td>
+													<td class='step-details'>Second Review Date column is present on translation landing page & it is readonly.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='33'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Logout From Translations Hub Application Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:56:49 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 1s+796ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:56:47 PM</td>
+													<td class='step-details'>User Click on the hamburg menu.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:56:49 PM</td>
+													<td class='step-details'>User Click on logout button.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:56:49 PM</td>
+													<td class='step-details'>User logout successfully from the Translations Hub application.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='34'>
+					<div class='test-heading'>
+						<span class='test-name'>SC007_VS Verify 3 dots from action columns from vendor study translation page: Executed On Browser::chrome</span>
+						<span class='test-time'>Dec 3, 2021 08:56:51 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 3, 2021 08:56:51 PM</span>
+	<span class='label end-time'>Dec 3, 2021 08:56:51 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='35'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Login To Translations Hub Application Verification For Valid Credentials</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:57:02 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 10s+568ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:56:55 PM</td>
+													<td class='step-details'>URL use to login into the application is https://dashboard.uat.sth.aws.blinxsolutions.systems/</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:56:55 PM</td>
+													<td class='step-details'>Translations Hub Application is launch successfully.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:56:55 PM</td>
+													<td class='step-details'>User name enter is: amol.nikam@blinxsolutions.com</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:56:55 PM</td>
+													<td class='step-details'>Password enter is: Blinx@123</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:57:02 PM</td>
+													<td class='step-details'>Login to the application is successful com.aventstack.extentreports.ExtentTest@14c1ba9</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='SuccessFulLoginVerification_2021.12.03 20-57-02.png' width='10%' src='SuccessFulLoginVerification_2021.12.03 20-57-02.png' data-src='SuccessFulLoginVerification_2021.12.03 20-57-02.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='36'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Vendor Studies  :Page Navigation Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 08:57:06 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 4s+393ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:57:06 PM</td>
+													<td class='step-details'>User Click on the Vendor Studies option from the hamburg menu.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='37'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Verify different options from  3 dots from action columns from vendor study translation page</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:00:11 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 3m 4s+392ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>8:58:40 PM</td>
+													<td class='step-details'>Request Localisation Review column name is not present on the Vendor Studies home page.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:58:40 PM</td>
+													<td class='step-details'>Import Translated Text,Export Master Text,Request Localisation Review,View Certificate of translation These columns are present on the Vendor Studies home page table. com.aventstack.extentreports.ExtentTest@13ddc0c</td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>9:00:11 PM</td>
+													<td class='step-details'>Test is failedcom.aventstack.extentreports.ExtentTest@13ddc0c</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='VendorStudies_2021.12.03 20-58-40.png' width='10%' src='VendorStudies_2021.12.03 20-58-40.png' data-src='VendorStudies_2021.12.03 20-58-40.png'></li>
+												<li><img data-featherlight='Test_Fail_ScreenShotSC007_verifyActionMenuTranslationPage_2021.12.03 21-00-10.png' width='10%' src='Test_Fail_ScreenShotSC007_verifyActionMenuTranslationPage_2021.12.03 21-00-10.png' data-src='Test_Fail_ScreenShotSC007_verifyActionMenuTranslationPage_2021.12.03 21-00-10.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='38'>
+					<div class='test-heading'>
+						<span class='test-name'>SC008_VS Verify Import Translated text: Executed On Browser::chrome</span>
+						<span class='test-time'>Dec 3, 2021 09:00:12 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 3, 2021 09:00:12 PM</span>
+	<span class='label end-time'>Dec 3, 2021 09:00:12 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='39'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Login To Translations Hub Application Verification For Valid Credentials</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:00:22 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 9s+534ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:00:15 PM</td>
+													<td class='step-details'>URL use to login into the application is https://dashboard.uat.sth.aws.blinxsolutions.systems/</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:00:15 PM</td>
+													<td class='step-details'>Translations Hub Application is launch successfully.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:00:15 PM</td>
+													<td class='step-details'>User name enter is: amol.nikam@blinxsolutions.com</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:00:16 PM</td>
+													<td class='step-details'>Password enter is: Blinx@123</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:00:22 PM</td>
+													<td class='step-details'>Login to the application is successful com.aventstack.extentreports.ExtentTest@2a561e</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='SuccessFulLoginVerification_2021.12.03 21-00-21.png' width='10%' src='SuccessFulLoginVerification_2021.12.03 21-00-21.png' data-src='SuccessFulLoginVerification_2021.12.03 21-00-21.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='40'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Vendor Studies  :Page Navigation Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:00:26 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 3s+981ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:00:26 PM</td>
+													<td class='step-details'>User Click on the Vendor Studies option from the hamburg menu.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='41'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Verify Import Translated text</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:00:34 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 8s+373ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:00:29 PM</td>
+													<td class='step-details'>User click on view button from the study table.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:00:29 PM</td>
+													<td class='step-details'>a-1009-0027-slate-v2-p9 Study is opened successfully.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:00:30 PM</td>
+													<td class='step-details'>Import Translated Text is selected.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:00:34 PM</td>
+													<td class='step-details'>File is uploaded successfully for import translation text option com.aventstack.extentreports.ExtentTest@133e20b</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='FileUploadSuccess_2021.12.03 21-00-34.png' width='10%' src='FileUploadSuccess_2021.12.03 21-00-34.png' data-src='FileUploadSuccess_2021.12.03 21-00-34.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='42'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Logout From Translations Hub Application Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:02:09 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 1m 30s+210ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>9:02:09 PM</td>
+													<td class='step-details'>hamburgMenu is not present in NHS BI application home page. com.aventstack.extentreports.ExtentTest@e9771c</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='HamburgMenuNotPresent_2021.12.03 21-02-09.png' width='10%' src='HamburgMenuNotPresent_2021.12.03 21-02-09.png' data-src='HamburgMenuNotPresent_2021.12.03 21-02-09.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='43'>
+					<div class='test-heading'>
+						<span class='test-name'>SC009_VS Verify Export Master Text: Executed On Browser::chrome</span>
+						<span class='test-time'>Dec 3, 2021 09:02:11 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 3, 2021 09:02:11 PM</span>
+	<span class='label end-time'>Dec 3, 2021 09:02:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='44'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Login To Translations Hub Application Verification For Valid Credentials</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:02:21 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 10s+239ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:02:14 PM</td>
+													<td class='step-details'>URL use to login into the application is https://dashboard.uat.sth.aws.blinxsolutions.systems/</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:02:14 PM</td>
+													<td class='step-details'>Translations Hub Application is launch successfully.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:02:14 PM</td>
+													<td class='step-details'>User name enter is: amol.nikam@blinxsolutions.com</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:02:15 PM</td>
+													<td class='step-details'>Password enter is: Blinx@123</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:02:21 PM</td>
+													<td class='step-details'>Login to the application is successful com.aventstack.extentreports.ExtentTest@5e485</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='SuccessFulLoginVerification_2021.12.03 21-02-21.png' width='10%' src='SuccessFulLoginVerification_2021.12.03 21-02-21.png' data-src='SuccessFulLoginVerification_2021.12.03 21-02-21.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='45'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Vendor Studies  :Page Navigation Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:02:26 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 4s+352ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:02:26 PM</td>
+													<td class='step-details'>User Click on the Vendor Studies option from the hamburg menu.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='46'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Verify Export Master Text</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:02:31 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 5s+443ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:02:30 PM</td>
+													<td class='step-details'>User click on view button from the study table.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:02:30 PM</td>
+													<td class='step-details'>a-1009-0027-slate-v2-p9 Study is opened successfully.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:02:31 PM</td>
+													<td class='step-details'>Export Master Text is selected.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:02:31 PM</td>
+													<td class='step-details'>File is downloaded successfully for Export Master Text option com.aventstack.extentreports.ExtentTest@94bd18</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='fileDownloadSuccessful_2021.12.03 21-02-31.png' width='10%' src='fileDownloadSuccessful_2021.12.03 21-02-31.png' data-src='fileDownloadSuccessful_2021.12.03 21-02-31.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='47'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Logout From Translations Hub Application Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:02:33 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 1s+912ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:02:32 PM</td>
+													<td class='step-details'>User Click on the hamburg menu.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:02:33 PM</td>
+													<td class='step-details'>User Click on logout button.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:02:33 PM</td>
+													<td class='step-details'>User logout successfully from the Translations Hub application.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='48'>
+					<div class='test-heading'>
+						<span class='test-name'>SC013_VS verify the search box on the vendor study translation page: Executed On Browser::chrome</span>
+						<span class='test-time'>Dec 3, 2021 09:02:35 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 3, 2021 09:02:35 PM</span>
+	<span class='label end-time'>Dec 3, 2021 09:02:35 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='49'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Login To Translations Hub Application Verification For Valid Credentials</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:02:45 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 10s+453ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:02:38 PM</td>
+													<td class='step-details'>URL use to login into the application is https://dashboard.uat.sth.aws.blinxsolutions.systems/</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:02:38 PM</td>
+													<td class='step-details'>Translations Hub Application is launch successfully.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:02:38 PM</td>
+													<td class='step-details'>User name enter is: amol.nikam@blinxsolutions.com</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:02:38 PM</td>
+													<td class='step-details'>Password enter is: Blinx@123</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:02:45 PM</td>
+													<td class='step-details'>Login to the application is successful com.aventstack.extentreports.ExtentTest@270b77</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='SuccessFulLoginVerification_2021.12.03 21-02-45.png' width='10%' src='SuccessFulLoginVerification_2021.12.03 21-02-45.png' data-src='SuccessFulLoginVerification_2021.12.03 21-02-45.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='50'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Vendor Studies  :Page Navigation Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:02:50 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 4s+292ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:02:50 PM</td>
+													<td class='step-details'>User Click on the Vendor Studies option from the hamburg menu.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='51'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Verify the search box on the vendor study translation page</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:02:57 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 7s+272ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:02:53 PM</td>
+													<td class='step-details'>User click on view button from the study table.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:02:57 PM</td>
+													<td class='step-details'>Vendor studies translation language search functionality is working fine com.aventstack.extentreports.ExtentTest@14d2294</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='vendorstudiesWorkingFine_2021.12.03 21-02-57.png' width='10%' src='vendorstudiesWorkingFine_2021.12.03 21-02-57.png' data-src='vendorstudiesWorkingFine_2021.12.03 21-02-57.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='52'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Logout From Translations Hub Application Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:02:59 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 2s+125ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:02:57 PM</td>
+													<td class='step-details'>User Click on the hamburg menu.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:02:59 PM</td>
+													<td class='step-details'>User Click on logout button.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:02:59 PM</td>
+													<td class='step-details'>User logout successfully from the Translations Hub application.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='53'>
+					<div class='test-heading'>
+						<span class='test-name'>SC014_VS Verify the Export table button on vendor study translation page: Executed On Browser::chrome</span>
+						<span class='test-time'>Dec 3, 2021 09:03:01 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 3, 2021 09:03:01 PM</span>
+	<span class='label end-time'>Dec 3, 2021 09:03:01 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='54'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Login To Translations Hub Application Verification For Valid Credentials</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:03:15 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 14s+289ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:03:06 PM</td>
+													<td class='step-details'>URL use to login into the application is https://dashboard.uat.sth.aws.blinxsolutions.systems/</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:03:06 PM</td>
+													<td class='step-details'>Translations Hub Application is launch successfully.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:03:06 PM</td>
+													<td class='step-details'>User name enter is: amol.nikam@blinxsolutions.com</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:03:06 PM</td>
+													<td class='step-details'>Password enter is: Blinx@123</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:03:15 PM</td>
+													<td class='step-details'>Login to the application is successful com.aventstack.extentreports.ExtentTest@8640f7</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='SuccessFulLoginVerification_2021.12.03 21-03-15.png' width='10%' src='SuccessFulLoginVerification_2021.12.03 21-03-15.png' data-src='SuccessFulLoginVerification_2021.12.03 21-03-15.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='55'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Vendor Studies  :Page Navigation Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:03:20 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 4s+915ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:03:20 PM</td>
+													<td class='step-details'>User Click on the Vendor Studies option from the hamburg menu.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='56'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Verify the Export table button on vendor study translation page -->Excel XLS format</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:03:25 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 4s+615ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>9:03:25 PM</td>
+													<td class='step-details'>Export_Excel03_12_2021_21_03.xlsx is not downloaded successfully in Excel (xlsx) format</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf fail' status='fail' test-id='57'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Verify the Export table button on vendor study translation page -->Excel CSV format</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:03:28 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 3s+340ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>9:03:28 PM</td>
+													<td class='step-details'>Export_CSV03_12_2021_21_03.csv is not downloaded successfully in CSV format</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='58'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Verify the Export table button on vendor study translation page -->Excel PDF format</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:03:32 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 3s+572ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:03:32 PM</td>
+													<td class='step-details'>Export_PDF03_12_2021_21_03.pdf is downloaded successfully in PDF format</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='59'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Logout From Translations Hub Application Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:03:35 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 3s+86ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:03:32 PM</td>
+													<td class='step-details'>User Click on the hamburg menu.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:03:35 PM</td>
+													<td class='step-details'>User Click on logout button.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:03:35 PM</td>
+													<td class='step-details'>User logout successfully from the Translations Hub application.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='60'>
+					<div class='test-heading'>
+						<span class='test-name'>SC015_VS verify columns and filters from AG grid: Executed On Browser::chrome</span>
+						<span class='test-time'>Dec 3, 2021 09:03:37 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 3, 2021 09:03:37 PM</span>
+	<span class='label end-time'>Dec 3, 2021 09:03:37 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='61'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Login To Translations Hub Application Verification For Valid Credentials</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:03:49 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 12s+333ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:03:40 PM</td>
+													<td class='step-details'>URL use to login into the application is https://dashboard.uat.sth.aws.blinxsolutions.systems/</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:03:40 PM</td>
+													<td class='step-details'>Translations Hub Application is launch successfully.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:03:40 PM</td>
+													<td class='step-details'>User name enter is: amol.nikam@blinxsolutions.com</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:03:40 PM</td>
+													<td class='step-details'>Password enter is: Blinx@123</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:03:49 PM</td>
+													<td class='step-details'>Login to the application is successful com.aventstack.extentreports.ExtentTest@173b149</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='SuccessFulLoginVerification_2021.12.03 21-03-49.png' width='10%' src='SuccessFulLoginVerification_2021.12.03 21-03-49.png' data-src='SuccessFulLoginVerification_2021.12.03 21-03-49.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='62'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Vendor Studies  :Page Navigation Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:03:55 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 5s+777ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:03:55 PM</td>
+													<td class='step-details'>User Click on the Vendor Studies option from the hamburg menu.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='63'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Verify columns and filters from AG grid</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:05:32 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 1m 37s+61ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:03:59 PM</td>
+													<td class='step-details'>User click on column tab from the studies translation page table ag grid</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:05:30 PM</td>
+													<td class='step-details'>Status field is not selected in column filter hence is it not display in AG grid.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:05:30 PM</td>
+													<td class='step-details'>Status field is selected in column filter hence is it display in AG grid.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:05:30 PM</td>
+													<td class='step-details'>15 these many records are present before applying filter</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:05:30 PM</td>
+													<td class='step-details'>User select value in input box as: draft</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:05:31 PM</td>
+													<td class='step-details'>User select value in input box as: approve</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:05:32 PM</td>
+													<td class='step-details'>14 these many records are present after applying filter com.aventstack.extentreports.ExtentTest@1d0e118</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='Filterapply_2021.12.03 21-05-32.png' width='10%' src='Filterapply_2021.12.03 21-05-32.png' data-src='Filterapply_2021.12.03 21-05-32.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='64'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Verify drag & drop functionality of column tab grid</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:05:34 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 1s+876ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:05:33 PM</td>
+													<td class='step-details'>Status column drag & drop successfully.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:05:33 PM</td>
+													<td class='step-details'>Created Date column drag & drop successfully.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:05:34 PM</td>
+													<td class='step-details'>Language column drag & drop successfully.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:05:34 PM</td>
+													<td class='step-details'>Quote Code column drag & drop successfully.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:05:34 PM</td>
+													<td class='step-details'>Drag and Drop successfull com.aventstack.extentreports.ExtentTest@1167630</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='DragAndDrop_2021.12.03 21-05-34.png' width='10%' src='DragAndDrop_2021.12.03 21-05-34.png' data-src='DragAndDrop_2021.12.03 21-05-34.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='65'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Logout From Translations Hub Application Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:05:37 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 2s+996ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:05:34 PM</td>
+													<td class='step-details'>User Click on the hamburg menu.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:05:37 PM</td>
+													<td class='step-details'>User Click on logout button.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:05:37 PM</td>
+													<td class='step-details'>User logout successfully from the Translations Hub application.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='66'>
+					<div class='test-heading'>
+						<span class='test-name'>SC017_VS Verify the translation view page: Executed On Browser::chrome</span>
+						<span class='test-time'>Dec 3, 2021 09:05:39 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 3, 2021 09:05:39 PM</span>
+	<span class='label end-time'>Dec 3, 2021 09:05:39 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='67'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Login To Translations Hub Application Verification For Valid Credentials</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:05:50 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 11s+256ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:05:42 PM</td>
+													<td class='step-details'>URL use to login into the application is https://dashboard.uat.sth.aws.blinxsolutions.systems/</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:05:42 PM</td>
+													<td class='step-details'>Translations Hub Application is launch successfully.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:05:42 PM</td>
+													<td class='step-details'>User name enter is: amol.nikam@blinxsolutions.com</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:05:42 PM</td>
+													<td class='step-details'>Password enter is: Blinx@123</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:05:50 PM</td>
+													<td class='step-details'>Login to the application is successful com.aventstack.extentreports.ExtentTest@15c757c</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='SuccessFulLoginVerification_2021.12.03 21-05-50.png' width='10%' src='SuccessFulLoginVerification_2021.12.03 21-05-50.png' data-src='SuccessFulLoginVerification_2021.12.03 21-05-50.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='68'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Vendor Studies  :Page Navigation Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:05:54 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 4s+136ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:05:54 PM</td>
+													<td class='step-details'>User Click on the Vendor Studies option from the hamburg menu.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='69'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Verify columns and filters from AG grid</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:07:31 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 1m 36s+512ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:05:58 PM</td>
+													<td class='step-details'>User click on column tab from the studies translation page table ag grid</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:07:28 PM</td>
+													<td class='step-details'>Status field is not selected in column filter hence is it not display in AG grid.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:07:29 PM</td>
+													<td class='step-details'>Status field is selected in column filter hence is it display in AG grid.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:07:29 PM</td>
+													<td class='step-details'>15 these many records are present before applying filter</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:07:29 PM</td>
+													<td class='step-details'>User select value in input box as: draft</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:07:29 PM</td>
+													<td class='step-details'>User select value in input box as: approve</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:07:31 PM</td>
+													<td class='step-details'>14 these many records are present after applying filter com.aventstack.extentreports.ExtentTest@19bccfe</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='Filterapply_2021.12.03 21-07-30.png' width='10%' src='Filterapply_2021.12.03 21-07-30.png' data-src='Filterapply_2021.12.03 21-07-30.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='70'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Verify drag & drop functionality of column tab grid</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:07:33 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 1s+862ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:07:31 PM</td>
+													<td class='step-details'>Status column drag & drop successfully.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:07:32 PM</td>
+													<td class='step-details'>Created Date column drag & drop successfully.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:07:32 PM</td>
+													<td class='step-details'>Language column drag & drop successfully.</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>9:07:32 PM</td>
+													<td class='step-details'>Quote Code column drag & drop successfully.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:07:33 PM</td>
+													<td class='step-details'>Drag and Drop successfull com.aventstack.extentreports.ExtentTest@170dc21</td>
+												</tr>
+										</tbody>
+									</table>
+										<ul class='screenshots'>
+												<li><img data-featherlight='DragAndDrop_2021.12.03 21-07-32.png' width='10%' src='DragAndDrop_2021.12.03 21-07-32.png' data-src='DragAndDrop_2021.12.03 21-07-32.png'></li>
+										</ul>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='71'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Logout From Translations Hub Application Verification</h5>
+						<span class="node-time label grey lighten-1 white-text">Dec 3, 2021 09:07:36 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 3s+411ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:07:33 PM</td>
+													<td class='step-details'>User Click on the hamburg menu.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:07:36 PM</td>
+													<td class='step-details'>User Click on logout button.</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>9:07:36 PM</td>
+													<td class='step-details'>User logout successfully from the Translations Hub application.</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<!-- category view -->
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>58</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>175</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Dec 3, 2021 08:52:34 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Dec 3, 2021 09:07:36 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 15m 2s+156ms</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 52,
+				failParent: 6,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 6,
+				
+				passChild: 107,
+				failChild: 7,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 61,
+				exceptionsChild: 7,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+ 		<script type='text/javascript'>
+ 		</script>
+	</body>
+	
+</html>
